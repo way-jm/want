@@ -1,0 +1,31 @@
+.right{
+  float:right;
+  height: 100%;
+  padding-right: 10px;
+  overflow: hidden;
+  .action {
+    display: inline-block;
+    height: 100%;
+    padding: 0 8px;
+    cursor:pointer;
+    transition: all 0.3s;
+    > i {
+      color:black;
+      vertical-align: middle;
+    }
+    &:hover {
+      background: rgba(0,0,0,0.025);
+    }
+    &:global(.opened) {
+      background:  rgba(0,0,0,0.025)
+    }
+  }
+  .account {
+    .avatar {
+      margin: 20px 6px 20px 2px;
+      color:  #1890ff;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
