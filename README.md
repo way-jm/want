@@ -2,12 +2,13 @@
 该项目使用[Create React App](https://github.com/facebook/create-react-app)创建。
 初衷是既想使用antd-Pro，但是要去再学习umi的一套东西并且umi约定性太强，所以想做一个基于antd+react+typescript的模板
 配置的东东基本已经搞完，只要改改业务代码，就可以快速搭建企业的中后台模块。
-### 如自己用脚手架搭建
-npx create-react-app my-app --template typescript
 
 ## 原则：约定配置生万物
 从根本上讲，模板的目的是尽可能使用约定的配置，来让框架自动生成模块代码，大量减少业务代码。
-这里主要有侧边栏的配置，还有下面说到的MainTable的配置。 
+这里主要有侧边栏的配置，还有下面说到的MainTable的配置。
+
+### 如自己用脚手架搭建
+npx create-react-app my-app --template typescript
 
 ### 可用的脚本
 
