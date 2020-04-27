@@ -1,19 +1,23 @@
 ## Want中后台脚手架
 该项目使用[Create React App](https://github.com/facebook/create-react-app)创建。
-###TypeScript
+### TypeScript
 npx create-react-app my-app --template typescript
 
 ### 可用的脚本
 
 在项目文件夹内，你可以执行这样的命令:
+#### `yarn dev`
+以开发模式(dev)启动项目并使用mock数据，mock数据地址为[http://localhost:9000](http://localhost:9000).<br />
+在浏览器上打开 [http://localhost:3000](http://localhost:3000) 。
+
 
 #### `yarn start`
 
 以开发模式(dev)启动项目.<br />
 在浏览器上打开 [http://localhost:3000](http://localhost:3000) 。
 
-#### `yarn test`
-运行测试脚本
+#### `yarn mock`
+启动mock数据，mock数据地址为[http://localhost:9000](http://localhost:9000).<br />
 
 #### `yarn build`
 
@@ -36,7 +40,11 @@ npx create-react-app my-app --template typescript
 [Just tried customize-cra@next, it works now.](https://github.com/arackaf/customize-cra/issues/231)
 
 #### less支持
-[rewrite-less](https://github.com/arackaf/customize-cra#addlessloaderloaderoptions)
+支持less，文件名需要命名成test.module.less
+参考[rewrite-less](https://github.com/arackaf/customize-cra#addlessloaderloaderoptions)
+
+#### TypeScript支持
+mock数据和前端工程均使用TypeScript编写。
 
 ## 项目目录（src）说明
 ```
@@ -83,5 +91,13 @@ router.tsx 路由渲染组件
      }
  ];
 ```
+## MainTable快速搭建 CRUD 的利器
+类似于[antdPro:ProTable](https://pro.ant.design/blog/protable-cn)
+大部分中后台页面都是非常同质化的 CRUD 组成的，很多时候都是一个 Table，然后提供一些操作按钮，并且有一个新增表单。
+MainTable接管了翻页，页码改变等事件，理论上你只要有配置列和 request 属性，就可以生成一个全功能的表格，完成分页查询，刷新，列属性修改等功能
+ 
+## 原则：约定配置生万物
+从根本上讲，模板的目的是尽可能使用约定的配置，来让框架自动生成模块代码，大量减少业务代码。
+这里主要有侧边栏的配置，还有上面说到的MainTable的配置。 
  
 
