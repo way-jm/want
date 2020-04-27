@@ -1,4 +1,4 @@
-## Want中后台脚手架
+## Want中后台脚手架(Way-Ant inspired!)
 该项目使用[Create React App](https://github.com/facebook/create-react-app)创建。
 初衷是既想使用antd-Pro，但是要去再学习umi的一套东西并且umi约定性太强，所以想做一个基于antd+react+typescript的模板
 配置的东东基本已经搞完，只要改改业务代码，就可以快速搭建企业的中后台模块。
